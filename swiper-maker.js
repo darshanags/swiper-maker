@@ -1,3 +1,5 @@
+import Swiper from 'swiper';
+
 class swiperMaker{
 	constructor(config = {}, swiperConfig = {}) {
 		this._defaults = {
@@ -8,7 +10,7 @@ class swiperMaker{
 		this._swiperDefaults = {
 			loop: true,
 			autoplay: {
-				delay: 5000,
+				delay: 5000
 			},
 			keyboard: {
 				enabled: true,
@@ -30,7 +32,6 @@ class swiperMaker{
 		
 		this.slideshows.forEach((slideshow) => {
 			let currentSwiper;
-			console.log(this.swiperOptions);
 			
 			if(this.options.playpause){
 				let playPauseBtn = slideshow.querySelector(this.options.playpause);
@@ -67,4 +68,4 @@ class swiperMaker{
 	}
 }
 
-module.exports = swiperMaker;
+export default swiperMaker;

@@ -1,6 +1,6 @@
 {
   "name": "swiper-maker",
-  "version": "0.1.0",
+  "version": "0.1.3",
   "description": "Create Swiper.js instances with minimal effort",
   "main": "swiper-maker.js",
   "scripts": {
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/darshanags/swiper-maker/issues"
   },
-  "homepage": "https://github.com/darshanags/swiper-maker#readme"
+  "homepage": "https://github.com/darshanags/swiper-maker#readme",
+  "devDependencies": {
+    "swiper": "^6.2.0"
+  }
 }
