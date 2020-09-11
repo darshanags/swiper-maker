@@ -1,0 +1,19 @@
+{
+  "name": "swiper-maker",
+  "version": "0.1.0",
+  "description": "Create Swiper.js instances with minimal effort",
+  "main": "swiper-maker.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darshanags/swiper-maker.git"
+  },
+  "author": "Darsh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/darshanags/swiper-maker/issues"
+  },
+  "homepage": "https://github.com/darshanags/swiper-maker#readme"
+}
