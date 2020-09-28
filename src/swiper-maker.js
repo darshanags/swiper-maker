@@ -1,7 +1,6 @@
-import Swiper from 'swiper';
-
 class swiperMaker{
-	constructor(config = {}, swiperConfig = {}) {
+	constructor(swiper, config = {}, swiperConfig = {}) {
+		this.swiper = swiper;
 		this._defaults = {
 			selector: '.slideshow',
 			playCls: 'playing',
@@ -53,7 +52,7 @@ class swiperMaker{
 					}
 				}
 			}
-			currentSwiper = new Swiper(slideshow, this.swiperOptions);
+			currentSwiper = new this.swiper(slideshow, this.swiperOptions);
 		});
 	}
 
