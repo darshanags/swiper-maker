@@ -1,6 +1,6 @@
 {
   "name": "swiper-maker",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Create Swiper.js instances with minimal effort",
   "main": "./dist/swiper-maker.js",
   "scripts": {
@@ -20,9 +20,9 @@
   "homepage": "https://github.com/darshanags/swiper-maker#readme",
   "devDependencies": {
     "@babel/core": "^7.11.6",
-    "@babel/plugin-transform-object-assign": "^7.10.4",
     "@babel/preset-env": "^7.11.5",
     "babel-loader": "^8.1.0",
+    "core-js": "^3.6.5",
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12"
   }
