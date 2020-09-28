@@ -14,19 +14,19 @@ const config = {
 				use: {
 					loader: "babel-loader",
 					options: {
-						plugins: ["@babel/plugin-transform-object-assign"]/*,
+						plugins: ["@babel/plugin-transform-object-assign"],
 						presets: [
 							[
-								"@babel/preset-env",
+								"@babel/preset-env"/*,
 								{
 									useBuiltIns: "entry",
 									targets: {
 										"ie": "11"
 									},
 									corejs: { version: "3.6.5", proposals: false }
-								}
+								}*/
 							]
-						],*/
+						],
 					},
 				},
 			},
