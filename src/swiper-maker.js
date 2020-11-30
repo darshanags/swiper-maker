@@ -1,3 +1,6 @@
+let assign = require('lodash.assign');
+let forEach = require('lodash.foreach');;
+
 class swiperMaker{
 	constructor(swiper, config = {}, swiperConfig = {}) {
 		this.swiper = swiper;
@@ -21,15 +24,15 @@ class swiperMaker{
 			}			
 		}
 
-		this.options = Object.assign({}, this._defaults, config);
-		this.swiperOptions = Object.assign({}, this._swiperDefaults, swiperConfig);		
+		this.options = assign({}, this._defaults, config);
+		this.swiperOptions = assign({}, this._swiperDefaults, swiperConfig);		
 		this.slideshows = document.querySelectorAll(this.options.selector);
 	}
 	
 	init(){
 		let parent = this;
 		
-		this.slideshows.forEach((slideshow) => {
+		forEach(this.slideshows, (slideshow) => {
 			let currentSwiper;
 			
 			if(this.options.playpause){
